@@ -1,9 +1,9 @@
-function Users() {
+function User() {
     return (
       <div className="App">
-        <h1>Hello Beginners</h1>
+        <h1>Hello Components</h1>
       </div>
     );
   }
   
-  export default Users;
+  export default User;
