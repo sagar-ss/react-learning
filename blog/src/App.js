@@ -1,12 +1,19 @@
 import logo from './logo.svg';
 import './App.css';
-import User from './Users';
+import {useState} from 'react';
 
 function App() {
+
+  const [data, setData] = useState(0);
+  function updateData()
+  {
+    setData(data + 1);
+  }
+
   return (
     <div className="App">
-      <User/>
-      <h1>hello users</h1>
+      <h1>{data}</h1>
+      <button onClick={()=>{updateData()}}>Update Data</button>
     </div>
   );
 }
